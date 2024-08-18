@@ -1,0 +1,30 @@
+.tile {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #32de84;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tile-x {
+  color: #32de84;
+}
+
+.tile-o {
+  color: #fff;
+}
+
+.x-hover:hover::after {
+  content: "X";
+  opacity: 0.4;
+  font-size: 4rem;
+}
+
+.o-hover:hover::after {
+  content: "O";
+  opacity: 0.4;
+  font-size: 4rem;
+  color: #fff;
+}

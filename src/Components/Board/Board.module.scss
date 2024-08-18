@@ -1,0 +1,15 @@
+.board {
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 150px);
+  cursor: pointer;
+  position: relative;
+}
+
+.right-border {
+  border-right: 0.4rem solid #32de84;
+}
+
+.bottom-border {
+  border-bottom: 0.4rem solid #fff;
+}
