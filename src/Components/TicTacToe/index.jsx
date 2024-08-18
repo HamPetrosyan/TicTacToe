@@ -104,7 +104,7 @@ export const TicTacToe = () => {
       <h1>
         {winner ? (
           <>
-            <span>Congratulations:</span> {winner} won!
+            <span>Congratulations!</span> {winner} won.
           </>
         ) : (
           <>
