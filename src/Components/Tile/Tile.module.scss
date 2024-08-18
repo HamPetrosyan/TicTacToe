@@ -5,7 +5,9 @@
   align-items: center;
   color: #32de84;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  user-select: none;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .tile-x {
@@ -16,15 +18,25 @@
   color: #fff;
 }
 
+.x-hover::after,
+.o-hover::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 4rem;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
 .x-hover:hover::after {
   content: "X";
   opacity: 0.4;
-  font-size: 4rem;
 }
 
 .o-hover:hover::after {
   content: "O";
   opacity: 0.4;
-  font-size: 4rem;
   color: #fff;
 }
