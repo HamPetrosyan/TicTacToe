@@ -6,10 +6,23 @@
 
 h1 {
   text-align: center;
+  text-wrap: wrap;
   font-size: 2.5rem;
   margin: 20px 0 50px 0;
 }
 
 span {
   color: #32de84;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 }

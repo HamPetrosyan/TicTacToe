@@ -1,5 +1,5 @@
 .tile {
-  font-size: 4rem;
+  font-size: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  font-size: 4rem;
+  font-size: 5rem;
   transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
@@ -39,4 +39,26 @@
   content: "O";
   opacity: 0.4;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .tile {
+    font-size: 4rem;
+  }
+
+  .x-hover::after,
+  .o-hover::after {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tile {
+    font-size: 3rem;
+  }
+
+  .x-hover::after,
+  .o-hover::after {
+    font-size: 3rem;
+  }
 }

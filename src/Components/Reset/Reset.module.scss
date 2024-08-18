@@ -1,13 +1,12 @@
 .reset-button {
   cursor: pointer;
-  transition: 0.2s ease;
-  margin-top: 50px;
+  transition: background-color 0.2s ease;
+  margin-top: 40px;
   padding: 20px;
   background-color: #32de84;
-  border: #32de84 8px;
+  border: #32de84 8px solid;
   border-radius: 50px;
   color: white;
-  width: 100%;
   font-size: 1.5rem;
   max-width: 250px;
   width: 100%;
@@ -15,4 +14,20 @@
 
 .reset-button:hover {
   background-color: #28b46b;
+}
+
+@media (max-width: 768px) {
+  .reset-button {
+    padding: 15px;
+    font-size: 1.2rem;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reset-button {
+    padding: 10px;
+    font-size: 1rem;
+    max-width: 150px;
+  }
 }

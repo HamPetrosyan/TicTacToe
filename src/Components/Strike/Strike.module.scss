@@ -98,3 +98,41 @@
   transform: rotate(-45deg);
   transform-origin: right;
 }
+
+@media (max-width: 768px) {
+  .strike-row-1,
+  .strike-row-2,
+  .strike-row-3 {
+    height: 3px;
+  }
+
+  .strike-column-1,
+  .strike-column-2,
+  .strike-column-3 {
+    width: 3px;
+  }
+
+  .strike-diagonal-1,
+  .strike-diagonal-2 {
+    height: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .strike-row-1,
+  .strike-row-2,
+  .strike-row-3 {
+    height: 2px;
+  }
+
+  .strike-column-1,
+  .strike-column-2,
+  .strike-column-3 {
+    width: 2px;
+  }
+
+  .strike-diagonal-1,
+  .strike-diagonal-2 {
+    height: 2px;
+  }
+}
