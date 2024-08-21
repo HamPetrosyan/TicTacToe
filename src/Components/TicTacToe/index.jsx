@@ -108,7 +108,7 @@ export const TicTacToe = () => {
           </>
         ) : (
           <>
-            TicTacToe with <span>React</span>
+            Tic Tac Toe with <span>React</span>
           </>
         )}
       </h1>
