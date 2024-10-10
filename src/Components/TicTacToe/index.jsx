@@ -78,7 +78,7 @@ export const TicTacToe = () => {
   const handleReset = () => {
     setGameState(GameState.inProgress);
     setTiles(Array(9).fill(null));
-    setPlayerTurn(Player_X);
+    setPlayerTurn(winner === Player_X ? Player_X : Player_O);
     setStrikeClass(null);
     setWinner(null);
   };
