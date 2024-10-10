@@ -9,7 +9,7 @@ export const Tile = ({
 }) => {
   let hoverClass = null;
 
-  if (!disabled && value === null) {
+  if (!disabled && value === null && playerTurn !== null) {
     hoverClass = styles[`${playerTurn.toLowerCase()}-hover`];
   }
 
